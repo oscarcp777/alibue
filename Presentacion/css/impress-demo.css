@@ -576,6 +576,9 @@ transition: opacity 1s, transform 0.5s 1s;
 .font {
     font-family: Antipasto;
 }
+.font-small{
+    font-size: .9em;
+}
 .nav {
     position: fixed;
     top: 50px;
@@ -607,11 +610,20 @@ transition: opacity 1s, transform 0.5s 1s;
 .font-x0 {
     font-size: 70px;
 }
+.font-x3 {
+    font-size: 80px;
+}
 .font-x1 {
     font-size: 100px;
 }
 .font-x2 {
     font-size: 130px
+}
+.font-x4 {
+    font-size: 50px;
+}
+.font-x5 {
+    font-size: 60px;
 }
 .tittle {
     font-size: 60px;
@@ -683,6 +695,9 @@ transition: opacity 1s, transform 0.5s 1s;
 }
 .text-center {
     text-align: center;
+}
+.text-left {
+    text-align: left;
 }
 .clear {
     clear: both;
@@ -881,7 +896,7 @@ padding: 20px 40px 20px 150px;
 .menu ul li {
     position: relative;
     opacity: 0.5;
-    right: 130px;
+    right: 175px;
     font-size: 20px;
     background: #323639;
     margin:10px 0;
