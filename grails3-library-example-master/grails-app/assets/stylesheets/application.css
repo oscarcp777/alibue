@@ -1,0 +1,46 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS file within this directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+*= require bootstrap
+*= require font-awesome
+*= require ace.min
+*= require ace-skins
+*= require_self
+*/
+.margin-15{
+    margin-left: 15px;
+}
+.property-list{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+.property-list .fieldcontain {
+    list-style: none;
+    overflow: hidden;
+    zoom: 1;
+    border-top: 1px dotted #e2e2e2;
+    margin-bottom: 20px;
+}
+.fieldcontain .property-label {
+    color: #000;
+    text-align: right;
+    width: 25%;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.fieldcontain .property-label {
+    float: left;
+}
+.fieldcontain .property-value {
+    display: block;
+    margin-left: 28%;
+    font-size: 1.5em;
+}
