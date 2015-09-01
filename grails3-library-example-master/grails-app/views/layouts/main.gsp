@@ -383,54 +383,17 @@
             <li class="">
                 <a href="${createLink(uri: '/')}">
                     <i class="menu-icon fa fa-tachometer"></i>
-                    <span class="menu-text"> Dashboard </span>
+                    <span class="menu-text"> Reportes </span>
                 </a>
 
                 <b class="arrow"></b>
             </li>
 
-
-
-
-            <li class="">
-
-                <g:link class="create" action="create">
-                    <i class="menu-icon fa fa-list-alt"></i>
-                    <span class="menu-text"> Nuevo libro </span>
-
-                </g:link>
-                <b class="arrow"></b>
-            </li>
-
-            <li class="">
-                <a href="calendar.html">
-                    <i class="menu-icon fa fa-calendar"></i>
-
-                    <span class="menu-text">
-                        Calendar
-
-                        <span class="badge badge-transparent tooltip-error" title="2 Important Events">
-                            <i class="ace-icon fa fa-exclamation-triangle red bigger-130"></i>
-                        </span>
-                    </span>
-                </a>
-
-                <b class="arrow"></b>
-            </li>
-
-            <li class="">
-                <a href="gallery.html">
-                    <i class="menu-icon fa fa-picture-o"></i>
-                    <span class="menu-text"> Gallery </span>
-                </a>
-
-                <b class="arrow"></b>
-            </li>
 
             <li class="">
                 <a href="#" class="dropdown-toggle">
                     <i class="menu-icon fa fa-tag"></i>
-                    <span class="menu-text"> More Pages </span>
+                    <span class="menu-text"> Cargas </span>
 
                     <b class="arrow fa fa-angle-down"></b>
                 </a>
@@ -438,19 +401,43 @@
                 <b class="arrow"></b>
 
                 <ul class="submenu">
-                    <li class="">
-                        <a href="profile.html">
+
+                    <li class="open">
+                        <a href="#" class="dropdown-toggle">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            User Profile
+
+                            Ordenes de Producción
+                            <b class="arrow fa fa-angle-down"></b>
                         </a>
 
                         <b class="arrow"></b>
-                    </li>
 
+                        <ul class="submenu nav-show" style="display: block;">
+                            <li class="">
+                                <g:link controller="pollosEnteros" action="index">
+                                    <i class="menu-icon fa fa-leaf green"></i>
+                                    Pollo Entero
+                                </g:link>
+
+
+                                <b class="arrow"></b>
+                            </li>
+
+                            <li class="">
+                                <g:link controller="pollosTrozados" action="index">
+                                    <i class="menu-icon fa fa-leaf green"></i>
+                                    Pollo Trozado
+                                </g:link>
+
+
+
+                            </li>
+                        </ul>
+                    </li>
                     <li class="">
                         <a href="inbox.html">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            Inbox
+                            Bajadas del tunel
                         </a>
 
                         <b class="arrow"></b>
@@ -459,7 +446,7 @@
                     <li class="">
                         <a href="pricing.html">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            Pricing Tables
+                            Salidas de la cámara
                         </a>
 
                         <b class="arrow"></b>
@@ -468,38 +455,15 @@
                     <li class="">
                         <a href="invoice.html">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            Invoice
+                            Conteo de camara
+
                         </a>
 
                         <b class="arrow"></b>
                     </li>
 
-                    <li class="">
-                        <a href="timeline.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Timeline
-                        </a>
 
-                        <b class="arrow"></b>
-                    </li>
 
-                    <li class="">
-                        <a href="email.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Email Templates
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="login.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Login &amp; Register
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
                 </ul>
             </li>
 
@@ -508,7 +472,7 @@
                     <i class="menu-icon fa fa-file-o"></i>
 
                     <span class="menu-text">
-                        Other Pages
+                        Reportes
 
                         <span class="badge badge-primary">5</span>
                     </span>
@@ -522,7 +486,7 @@
                     <li class="">
                         <a href="faq.html">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            FAQ
+                            Producciones y Bajadas Tunel
                         </a>
 
                         <b class="arrow"></b>
@@ -531,7 +495,7 @@
                     <li class="">
                         <a href="error-404.html">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            Error 404
+                            Stock Trozado
                         </a>
 
                         <b class="arrow"></b>
@@ -540,29 +504,14 @@
                     <li class="">
                         <a href="error-500.html">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            Error 500
+                            Cantidad producida
                         </a>
 
                         <b class="arrow"></b>
                     </li>
 
-                    <li class="">
-                        <a href="grid.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Grid
-                        </a>
 
-                        <b class="arrow"></b>
-                    </li>
 
-                    <li class="active">
-                        <a href="blank.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Blank Page
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
                 </ul>
             </li>
         </ul><!-- /.nav-list -->
@@ -668,7 +617,7 @@
             var data="<div class='col-sm-9'>"+ this.outerHTML+"</div>";
             $( this ).replaceWith(data);
         });
-        $( ".fieldcontain select" ).addClass('margin-15 col-sm-4');
+        $( ".fieldcontain select" ).addClass('margin-15');
     });
 </script>
 
