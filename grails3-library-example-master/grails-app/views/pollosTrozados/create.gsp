@@ -18,6 +18,7 @@
         <g:if test="${flash.message}">
             <div class="message" role="status">${flash.message}</div>
         </g:if>
+        <hr>
         <g:hasErrors bean="${this.pollosTrozados}">
             <ul class="errors" role="alert">
                 <g:eachError bean="${this.pollosTrozados}" var="error">
